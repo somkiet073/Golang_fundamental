@@ -20,6 +20,9 @@ func main() {
 	delete(m, "k2")
 	fmt.Println("map:", m)
 
+	prx := m["k2"]
+	fmt.Println("prs:", prx)
+	//
 	_, prs := m["k2"]
 	fmt.Println("prs:", prs)
 
