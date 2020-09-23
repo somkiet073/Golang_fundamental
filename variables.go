@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"time"
+)
 
 /*
 	Golang Data Types
@@ -35,4 +38,7 @@ func main() {
 	*/
 	f := "apple"
 	fmt.Println(f)
+
+	times := time.Second * 2
+	fmt.Println("times:", times)
 }
