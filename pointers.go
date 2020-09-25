@@ -10,6 +10,10 @@ func zeroptr(iptr *int) {
 	*iptr = 0
 }
 
+func zero(xx *int) {
+	*xx = 0
+}
+
 func main() {
 	i := 1
 	fmt.Println("initial:", i)
@@ -21,4 +25,8 @@ func main() {
 	fmt.Println("zeroptr:", i)
 
 	fmt.Println("pointer:", &i)
+
+	xx := 5
+	zero(&xx)
+	fmt.Println("zero: ", xx)
 }
